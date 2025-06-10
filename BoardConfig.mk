@@ -58,6 +58,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := OEM_TARGET_PRODUCT=$(PRODUCT_DEVICE)
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm4250
 TARGET_KERNEL_CONFIG := \
     vendor/bengal-perf_defconfig \
+    vendor/debugfs.config \
     vendor/erofs.config
 
 # Platform
