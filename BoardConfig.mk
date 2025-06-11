@@ -141,7 +141,7 @@ ODM_MANIFEST_8_FILES := $(DEVICE_PATH)/manifest_8.xml
 ODM_MANIFEST_SKUS += 2 8
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oplus
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_oplus)
 
 # Media
 TARGET_USES_ION := true
